@@ -1,11 +1,20 @@
 .container {
-	max-width: 500px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	margin: 0 auto;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 .product-box {
-	max-width: 300px;
+	max-width: 500px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,11 +25,7 @@
 	font-size: 1.5rem;
 }
 .product-box__image {
-	width: 100%;
-	max-width: 200px;
-}
-.product-box__description {
-	padding: 0 1rem;
+	max-width: 300px;
 }
 .product-box--1 {
 	font-family: sans-serif;
@@ -35,7 +40,138 @@
 .product-box__description--1 {
 	text-align: center;
 }
-
 .product-box__title--1 {
 	margin: 1.4rem 0.8rem 0rem 0.8rem;
+}
+.product-box__image--1{
+	max-width: 200px;
+}
+.product-box--1 {
+	font-family: sans-serif;
+	border: 1px solid black;
+	background-image: linear-gradient(
+		to top right,
+		rgba(208, 106, 62, 0.4),
+		rgba(70, 131, 33, 0.4)
+	);
+	border-radius: 0.4rem;
+}
+.product-box--2 {
+	display: inline-block;
+	width: 240px;
+	text-align: center;
+}
+.img-container {
+	height: 230px;
+	width: 200px;
+	overflow: hidden;
+	border-radius: 0px 0px 20px 20px;
+	display: inline-block;
+}
+.img-container img {
+	transform: skew(0deg, -13deg);
+	height: 250px;
+	margin: -22px 0px 0px -55px;
+}
+.inner-skew {
+	display: inline-block;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 0px;
+	transform: skew(0deg, 13deg);
+	font-size: 0px;
+	margin: 27px 0px 0px 0px;
+	background: #c8c2c2;
+	height: 250px;
+	width: 250px;
+}
+.text-container {
+	font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: rgb(208, 106, 62);
+  font-size: 18px;
+}
+.product-box--3{
+	align-items: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #fafafa;
+  border-radius: 50px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.397) inset,
+    -2px -2px 3px 0 rgba(0, 0, 0, .25) inset;
+}
+.product-box__image--3{
+	max-width: 300px;
+	border-radius: 1rem;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.product-box__title--3{
+	letter-spacing: 0.1rem;
+}
+.product-box__description--3{
+	max-width: 280px;
+	text-align: center;
+	margin: 1rem;
+}
+.product-box--4{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #535353;
+	flex-direction: column;
+  border: 1px solid #fff;
+	height: 350px;
+  border-radius: 20px;
+  box-shadow: 
+    inset 0 0 15px rgba(55, 84, 170,0),
+    inset 0 0 20px rgba(255, 255, 255,0),
+    7px 7px 15px rgba(55, 84, 170,.15),
+    -7px -7px 20px rgba(255, 255, 255,1),
+    inset 0px 0px 4px rgba(255, 255, 255,.2);
+}
+.product-box__image--4{
+	width: 140px;
+	margin-top: 30px;
+	opacity: 0.7;
+}
+.product-box__title--4{
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0;
+	margin: 0;
+}
+.product-box__description--4{
+	padding: 1rem;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+.product-box--5{
+	flex-direction: row;
+  border: 1px solid #fff;
+	border-radius: 20px;
+	width: 500px;
+	box-shadow: 
+	inset 0 0 15px rgba(55, 84, 170,0),
+	inset 0 0 20px rgba(255, 255, 255,0),
+	7px 7px 15px rgba(55, 84, 170,.15),
+	-7px -7px 20px rgba(255, 255, 255,1),
+	inset 0px 0px 4px rgba(255, 255, 255,.2);
+}
+.product-box__image--5{
+	width: 200px;
+	padding: 2rem 1rem;
+}
+.product-box__text-container{
+	padding: 1rem;
 }
