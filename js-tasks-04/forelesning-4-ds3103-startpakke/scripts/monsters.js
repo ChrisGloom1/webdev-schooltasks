@@ -34,6 +34,7 @@ const showAllMonsters = () =>
       <h3>${ monster.name }</h3>
       <img src="images/${ monster.image }">
     </article>`;
+    
   } );
   document.querySelector( "#monster-section" ).innerHTML = htmlText;
 }
