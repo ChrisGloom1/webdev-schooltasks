@@ -30,11 +30,12 @@ const showAllMonsters = () =>
   cuteMonsters.forEach( ( monster ) =>
   {
     htmlText += `
-    <article class="col-4 col-sm-3">
+    <article>
       <h3>${ monster.name }</h3>
-      <img src="images/${ monster.image }" alt="Image of ${ monster.name }">
+      <img src="images/${ monster.image }">
     </article>`;
   } );
   document.querySelector( "#monster-section" ).innerHTML = htmlText;
 }
+
 showAllMonstersBtn.addEventListener("click", showAllMonsters);

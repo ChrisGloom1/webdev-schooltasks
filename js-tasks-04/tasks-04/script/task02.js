@@ -9,6 +9,8 @@ const multiplyOutput = document.querySelector("#multiply-output")
 const additionOutput = document.querySelector( "#addition-output" );
 const subtractOutput = document.querySelector( "#subtract-output" );
 const divideOutput = document.querySelector( "#divide-output" );
+let number1 = num1.value;
+let number2 = num2.value;
 
 function multiplyNum1AndNum2(){
   number1 = num1.value;
