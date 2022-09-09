@@ -15,7 +15,6 @@ const countries = [
     image: "denmark.gif"
   }
 ];
-console.log("test1");
 
 const countriesBtn = document.querySelector( "#countries-btn" );
 const countriesOutput = document.querySelector( "#countries-output" );
