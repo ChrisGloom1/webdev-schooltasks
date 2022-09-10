@@ -34,11 +34,9 @@ const employeeArray = [
 const departmentSelector = document.querySelector( "#department-selector" );
 const searchBtn = document.querySelector( "#search-btn" );
 const departmentOutput = document.querySelector( "#department-output" );
-let capitalFilter = departmentSelector.filter(departmentSelector.value = )
 
 const showDepartment = () => {
   
 }
-
 
 searchBtn.addEventListener( "click", showDepartment )
