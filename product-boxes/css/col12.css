@@ -1,0 +1,41 @@
+body{
+  font-family: sans-serif;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.product-box {
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+}
+.product-box__title {
+	font-size: 1.5rem;
+}
+.product-box__image {
+	max-width: 200px;
+  	padding: 2rem 1rem;
+}
+.product-box--5{
+	flex-direction: row;
+  border: 1px solid #fff;
+	border-radius: 20px;
+	width: 500px;
+	box-shadow: 
+	inset 0 0 15px rgba(55, 84, 170,0),
+	inset 0 0 20px rgba(255, 255, 255,0),
+	7px 7px 15px rgba(55, 84, 170,.15),
+	-7px -7px 20px rgba(255, 255, 255,1),
+	inset 0px 0px 4px rgba(255, 255, 255,.2);
+}
+.product-box__text-container{
+	padding: 1rem;
+}
