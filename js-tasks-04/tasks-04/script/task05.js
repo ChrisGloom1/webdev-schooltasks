@@ -29,14 +29,29 @@ const employeeArray = [
     surname: "Kåsin",
     department: "Utvikler"
   }
-]
+];
 
 const departmentSelector = document.querySelector( "#department-selector" );
 const searchBtn = document.querySelector( "#search-btn" );
 const departmentOutput = document.querySelector( "#department-output" );
 
-const showDepartment = () => {
-  
+const checkSelectValue = () => {
+  let department = departmentSelector.value;
+  switch (department){
+    case "utvikler":
+      printUtvikler();
+      break;
+    case "ux":
+      printUx();
+      break;
+    case "hr":
+      printHr();
+      break;
+  }
 }
 
-searchBtn.addEventListener( "click", showDepartment )
+printUtvikler = () => console.log("utvikler")
+printUx = () => console.log("ux")
+printHr = () => console.log("hr")
+
+searchBtn.addEventListener( "click", checkSelectValue )
