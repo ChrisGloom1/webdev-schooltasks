@@ -1,0 +1,12 @@
+.superhero__title--evil{
+  background-color: rgb(255, 155, 155);
+  color: red;
+  padding: 0.5rem;
+  max-width: 25rem;
+}
+.superhero__title--good{
+  background-color: rgb(177, 255, 155);
+  color: green;
+  padding: 0.5rem;
+  max-width: 25rem;
+}
