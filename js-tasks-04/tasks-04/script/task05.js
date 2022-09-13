@@ -31,14 +31,9 @@ const employeeArray = [
   }
 ];
 
-const getUtvikler = employeeArray.filter(title => title.department == "Utvikler");
-const getUx = employeeArray.filter(title => title.department == "ux");
-const getHr = employeeArray.filter(title => title.department == "HR");
-
 const departmentSelector = document.querySelector( "#department-selector" );
 const searchBtn = document.querySelector( "#search-btn" );
 const departmentOutput = document.querySelector( "#department-output" );
-
 
 const checkSelectValue = () => {
   let htmlTxt = "";

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/task-01.css">
+  <script defer src="scripts/task-01.js"></script>
+  <title>Car Hunt!</title>
+</head>
+<body>
+  <header>
+    <h1>Car Hunt!</h1>
+    <h2>Find the car that suits your needs!</h2>
+  </header>
+  <main>
+    <div id="functions">
+      <div id="vis-alle-div" class="function-div">
+        <h3>Vis alle</h3>
+        <button id="vis-alle-btn">Vis alle</button>
+      </div>
+      <div id="etter-merke-div" class="function-div">
+        <h3>Søk etter merke</h3>
+        <label for="merke-input">Merke</label>
+        <input type="text" id="merke-input" placeholder="Eks Tesla">
+        <button id="etter-merke-btn">Søk på merke</button>
+      </div>
+      <div id="etter-pris-div" class="function-div">
+        <h3>Søk etter pris</h3>
+        <label for="min-pris-input">Fra pris</label>
+        <input type="number" id="min-pris-input" placeholder="Eks 10000">
+        <label for="maks-pris-input">Til pris</label>
+        <input type="number" id="maks-pris-input" placeholder="Eks 300000">
+        <button id="etter-pris-btn">Søk på pris</button>
+      </div>
+      <div id="sortere-div" class="function-div">
+        <h3>Sorter</h3>
+        <button id="sorter-km-btn">Sorter etter km</button>
+        <button id="sorter-pris-btn">Sorter på pris</button>
+      </div>
+    </div>
+    <div id="biler-output"></div>
+  </main>
+  <footer></footer>
+</body>
+</html>
