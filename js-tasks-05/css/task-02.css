@@ -1,0 +1,27 @@
+body{
+  font-family: sans-serif;
+  background-color: rgb(141, 141, 141);
+  margin: 0;
+}
+header h1{
+  text-align: center;
+}
+main{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.grid{
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-box-pizza{
+  margin: 2rem;
+}
+.product-box-pizza__image{
+  max-width: 400px;
+}
+.product-box-pizza__btn{
+  padding: 0.4rem;
+}
