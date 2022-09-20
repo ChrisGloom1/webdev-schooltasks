@@ -20,12 +20,12 @@ const showShoppingCart = () => {
       htmlTxt += `
       <article>
         <h3>${pizza.name}</h3>
-        <p>${pizza.price}</p>
+        <p>${pizza.price},-</p>
       </article>
       `;
     })
     divOutputShoppingCart.innerHTML = `
-    <h4>Totalpris: ${ getTotalPrice() }</h4>
+    <h4>Totalpris: ${ getTotalPrice() },-</h4>
     ${ htmlTxt }
     `;
   } else {
