@@ -11,6 +11,7 @@ const addStyling = () => {
 
   let arrStyling;
   if ( checkIfArrayExists() ){
+    arrStyling = [];
     const arrInLocalStorage = localStorage.getItem( "newStyle" );
     const parsedArrInLocalStorage = JSON.parse( arrInLocalStorage );
     arrStyling = parsedArrInLocalStorage;
@@ -29,7 +30,6 @@ const checkIfArrayExists = () => {
 
 // Selvkallende funksjon med anonym funksjon inni -> kjører i det siden blir lastet
 // (  () => { kodeblokk }  )();
-
 (() => console.log(checkIfArrayExists()))();
 
 btnSaveStyling.addEventListener( "click", addStyling );
