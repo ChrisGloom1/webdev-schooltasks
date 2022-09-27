@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sletting</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sletting</title>
 </head>
 <body>
-    
+  <script>
+    const movieArray = [
+      { 
+          id: 1, 
+          title: "Olsenbanden - siste skrik"
+      },
+      { 
+          id: 2, 
+          title: "Syk pike"
+      },
+      { 
+          id: 3, 
+          title: "Utvandrerne"
+      },
+      { 
+          id: 4, 
+          title: "Rose"
+      },
+      { 
+          id: 5, 
+          title: "Fest hos Albert Åberg"
+      },
+      { 
+          id: 6, 
+          title: "Bullet Train"
+      }
+    ];
+  console.log( movieArray );
+  // find( ELEMENT ), ARRAY.indexOf( ELEMENT ), ARRAY.splice( INDEX, 1 )
 
-    <script>
+  // Oppretter et nytt array identisk til originalarray, med unntak av betingelsene satt
+  const moviesWithout5 = movieArray.filter( movie => movie.id != 5 && movie.id != 3);
+  // localStorage.setItem( "movies", JSON.stringify( moviesWithout5 ) )
+  console.log( moviesWithout5 );
 
-        const movieArray = [
-            { 
-                id: 1, 
-                title: "Olsenbanden - siste skrik"
-            },
-            { 
-                id: 2, 
-                title: "Syk pike"
-            },
-            { 
-                id: 3, 
-                title: "Utvandrerne"
-            },
-            { 
-                id: 4, 
-                title: "Rose"
-            },
-            { 
-                id: 5, 
-                title: "Fest hos Albert Åberg"
-            },
-            { 
-                id: 6, 
-                title: "Bullet Train"
-            }
-        ];
+  // oppretter _ett_ objekt med alle props til objektet uthentet fra originalarray
+  const movieToDelete = movieArray.find( movie => movie.title === "Rose" );
+  console.log( movieToDelete );
 
-    </script>
+  // plasserer indexen i originalarray i variabel basert på objetet satt i parameter
+  const deleteIndex = movieArray.indexOf( movieToDelete )
+  console.log( deleteIndex );
 
+  // sletter objektet i array som er identisk indexen (/variabel) satt som parameter, andre parameter bestemmer hvor mange objekter etter indexen som skal slettes
+  movieArray.splice( deleteIndex, 1 );
+  console.log( movieArray );
+
+  </script>
 </body>
 </html>
