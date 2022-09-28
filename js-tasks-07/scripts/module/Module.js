@@ -1,13 +1,20 @@
 const Module = ( ()=> {
 
-  const checkIfArrayExists = (arrayName) => {
-    const doesArrayExist = localStorage.getItem(arrayName) ===  null? true : false; 
-    return doesArrayExist; 
-  }
-  
+  let movieArr = [];
 
-    return {
-      checkIfArrayExists
+  const storeMovie = (movieId, movieTitle, categoryId) => {
+    // opprette objekt basert på input fields
+    const newMovie = {id: movieId, title: movieTitle, category: categoryId};
+    // Plassere objektet i arrayet tidligere opprettet
+    movieArr.push(newMovie)
+    // Konvertere arrayet til en string
+    const stringedArr = JSON.stringify(movieArr);
+    // Lagre arrayet som string (stringedArr) i localstorage samt navn på arrayet("Movie Arr") i localstorage
+    localStorage.setItem("Movie Arr", stringedArr);
+  }
+
+  return {
+    storeMovie
   }
 
 })();
