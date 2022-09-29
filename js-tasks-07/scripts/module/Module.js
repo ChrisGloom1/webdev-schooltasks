@@ -15,8 +15,28 @@ const Module = ( ()=> {
     movieId++;
   }
 
+  const getAllMovies = () => {
+    if ( movieArr.length > 0 ){
+      htmlTxt = "";
+      movieArr.forEach(movie => {
+        htmlTxt = `
+          <article>
+            <h3>${movie.title}</h3>
+            <ul>
+              <li>${movie.categoryId}</li>
+              <li>${movie.movieId}</li>
+            <ul>
+          </article>
+        `;
+      } );
+    } else {
+      htmlTxt = "Ingen filmer lagret.";
+    }
+    // TODO: fix output to be correct
+  }
+
   return {
-    storeMovie
+    storeMovie, getAllMovies
   }
 
 })();
