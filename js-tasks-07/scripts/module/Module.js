@@ -32,7 +32,7 @@ const Module = ( ()=> {
     } else {
       htmlTxt = "Ingen filmer lagret.";
     }
-    // TODO: fix output to be correct
+    return htmlTxt;
   }
 
   return {
