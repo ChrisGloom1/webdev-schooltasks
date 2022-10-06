@@ -1,17 +1,13 @@
+import MovieModule from "../modules/MovieModule";
+
 const MovieList = () => {
 
-  const movieArr = [
-    "Avatar 2",
-    "Albert Åberg",
-    "Spiderman - Many Ways Home",
-    "Smile",
-    "Nope",
-    "Olsenbanden"
-  ];
-
   const getMovieList = () => {
+
+    const movieArr = MovieModule.getAll()
+
     const movies = movieArr.map( (movie, i) => (
-      <li key="{`m-${i}`}">{movie}</li>
+      <li key={`m-${i}`}>{movie}</li>
     ) );
     return movies;
   }
