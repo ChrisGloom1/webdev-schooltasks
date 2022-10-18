@@ -1,14 +1,17 @@
+import ElfItem from "./components/elves/ElfItem";
+import DwarfItem from "./components/dwarfs/DwarfItem";
+import { MachineItem, getAuthor } from "./components/machines/MachineItem";
+
 function App() {
-
-  const elfName = "Legosglass";
-
   return (
     <div>
-      <header>
-        <h1>Rings of påvvr</h1>
-        <p>Alven {elfName} sier "Juuhuuuu!"</p>
-      </header>
+      <ElfItem name="Galadriel" description="Galadriel er dronning og sånn. Pussy power heheheh" />
+      <ElfItem name="Legolas" description="Langt hår som får jentene til å bli fuktige" />
+      <ElfItem name="Elron" description="Seriøs alv, lite gøy." />
+      <DwarfItem/>
+      <MachineItem />
     </div>
+    
   );
 }
 
