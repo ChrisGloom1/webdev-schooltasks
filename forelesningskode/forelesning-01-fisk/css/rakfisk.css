@@ -1,0 +1,43 @@
+/*
+    B(lock)
+*/
+.rakfisk-box{
+    margin: 10px;
+    background-color: rgb(230, 200, 200);
+    border: 1px solid rgb(210, 180, 180);
+    padding: 10px;
+}
+
+
+/*
+    E(element)
+*/
+.rakfisk-box__title{
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rakfisk-box__image{
+    width: 100%;
+}
+
+/* 
+    Merk (som nevnt i slideserie om BEM) at det er lov å ha en Block i en Block. 
+    I dette eksempelet er knappen en Element. 
+    Hvis det var slik at knapper hadde lik styling på hele nettstedet så ville man kanskje heller hatt knappen som en Block som kan gjenbrukes i andre Block.
+*/
+.rakfisk-box__button{
+    background-color: rgb(230, 230, 230);
+}
+
+
+/*
+    M(odifier) - varianter av knapper 
+*/
+.rakfisk-box__button--buy{
+
+}
+
+.rakfisk-box__button--read-more{
+    background-color: rgb(100, 100, 230);
+}

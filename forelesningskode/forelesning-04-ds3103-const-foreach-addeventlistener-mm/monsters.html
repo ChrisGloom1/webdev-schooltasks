@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Søte Monstre</title>
+    <link rel="stylesheet" href="css/monsters.css">
+
+    <!-- Ved å sette defer på script får vi lov til å legge den også i <head>. Ellers måtte vi ha plassert den nederst i <body>-->
+    <script defer src="/scripts/monsters.js"></script> <!-- Dette er en filsti tilpasset localhost og ekte server (Web-hotell). Hvis man prøver å kjøre løsningen 100% lokalt på sin maskin vil ikke filstien med slash foran fungere. -->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Monstre</h1>
+        </header>
+
+        <main>
+            
+            <section>
+                <!-- setter id på elementene som skal DOM-manipuleres fra JavaScript -->
+                <button id="show-all-monsters-btn">Vis alle monstre</button>
+            </section>
+
+            <section class="grid" id="monster-section">
+
+            </section>
+
+        </main>
+
+        <footer></footer>
+
+    </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    
+    <script>
+
+        // En klassisk funksjon med 1 parameter
+        function showAllMonsters(name){
+            alert(name);
+        }
+
+        // Kaller på funksjonen showAllMonsters, sender inn argumentet "Shrek" som name-parameteren tar imot
+        showAllMonsters( "Shrek" );
+
+
+        // Arrow function med 2 parametere
+        const showAllMonsters2 = ( name, age ) => {
+            alert(`Navn: ${ name }, alder: ${ age } `);
+            /*
+                Her kunne vi hatt x antall kodelinjer som gjør forskjellige ting.
+                Hvis man har krøllparanteser etter => så kan man ha flere "statements".
+                En statement er en kodelinje som utfører noe, og som man typisk avslutter med semikolon.
+            */
+        }
+
+        // Kaller på funksjonen showAllMonsters2 og sender inn argumentene for name og age
+        showAllMonsters2( "Huffsa", 350 );
+
+        
+        /*
+            Arrow function med 1 parameter. 
+            Hvis en arrow function kun har 1 parameter trenger man ikke ha parantes rundt den.
+            Hvis en arrow function kun har 1 statement trenger man ikke krøllparanteser.
+        */
+        const showAllMonsters3 = name => alert( name ); 
+
+        showAllMonsters3( "The Thing" );
+
+    </script>
+
+</body>
+</html>

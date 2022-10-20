@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+section{
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(210, 210, 210);
+    grid-column: auto / span 6;
+}

@@ -1,0 +1,13 @@
+/* starten på et grid-system */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}        
+
+.col-6{
+    grid-column: auto / span 6;
+}
+
+.responsive-image{
+    width: 100%;
+}

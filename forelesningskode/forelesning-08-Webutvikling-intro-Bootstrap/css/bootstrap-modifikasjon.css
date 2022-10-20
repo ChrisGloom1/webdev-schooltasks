@@ -1,0 +1,50 @@
+/*
+    Hvis man ønsker å modifisere Bootstrap-elementer kan man for eksempel overskrive kode som allerede eksisterer i Bootstrap eller evt. lage helt nye klasser som man utvider med.
+    Det kan være lurt å opprette en ny CSS-fil som overskriver det man ønsker å overskrive.
+    Man henter først inn link for Bootstrap, deretter link for sin modifikasjon av den.
+
+    Eksempel: på linje 2928 i bootstrap.css har man koden for en spesifikk type knapp som heter info...:
+    .btn-info {
+        --bs-btn-color: #000;
+        --bs-btn-bg: #0dcaf0;
+        --bs-btn-border-color: #0dcaf0;
+        --bs-btn-hover-color: #000;
+        --bs-btn-hover-bg: #31d2f2;
+        --bs-btn-hover-border-color: #25cff2;
+        --bs-btn-focus-shadow-rgb: 11, 172, 204;
+        --bs-btn-active-color: #000;
+        --bs-btn-active-bg: #3dd5f3;
+        --bs-btn-active-border-color: #25cff2;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #000;
+        --bs-btn-disabled-bg: #0dcaf0;
+        --bs-btn-disabled-border-color: #0dcaf0;
+    }
+
+    Denne koden kan man overskrive ved å legge til endring av spesifikke ting::after
+    .btn-info {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #0dcaf0;
+    --bs-btn-border-color: #0dcaf0;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #31d2f2;
+    --bs-btn-hover-border-color: #25cff2;
+    --bs-btn-focus-shadow-rgb: 11, 172, 204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #3dd5f3;
+    --bs-btn-active-border-color: #25cff2;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #0dcaf0;
+    --bs-btn-disabled-border-color: #0dcaf0;
+    }
+
+*/
+
+/* Denne knappen er en modifikasjon av info-knappen*/
+.btn-info{
+    --bs-btn-color: rgb(180, 210, 255);
+    --bs-btn-hover-color: rgb(0, 50, 255);
+    --bs-btn-bg: rgb(10, 100, 255);
+    --bs-btn-hover-bg: rgb(180, 210, 255);    
+}

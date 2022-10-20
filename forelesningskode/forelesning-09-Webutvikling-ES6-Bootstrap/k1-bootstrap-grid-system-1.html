@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--
+        Bootstrap gridsystem består av tre hoveddeler: container > row > col        
+
+        col betyr f.o.m. 0px og oppover
+
+        Hvis man ikke angir en enhet etter col, for eksempel col-6, vil col'ene dynamisk ta størrelsen som er tilgjengelig.
+    -->
+
+    <main class="container">
+
+      
+        <section class="row g-5">
+
+            <!--
+                Emmet-kodeeksempler:
+
+                article 
+
+                article>(h3>lorem3)
+
+                article>(h3>lorem3)+(p>lorem10)
+
+                (article>(h3>lorem3)+(p>lorem10))*100            
+            -->
+
+            <article class="col-12 bg-dark text-white">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita.</p>
+            </article>
+            <article class="col-6 col-md-4">
+                <div class="bg-dark text-white p-3 text-center"><!-- Et moment her er at man for å stilsette bakgrunnen til "produktbokser" må pakke inneholdet i "col" med noe; her en div og stilsette den-->
+                    <h3>Necessitatibus, autem distinctio.</h3>
+                    <p>Voluptates fugiat, ullam veritatis natus quisquam non laboriosam corporis voluptatem!</p>
+                </div>
+            </article>
+            <article class="col-6 col-md-4 bg-dark text-white">
+                <h3>Illo, culpa quos?</h3>
+                <p>Quia autem error aliquid fuga suscipit labore harum? Dolores, reiciendis?</p>
+            </article>
+            <article class="col-6 col-md-4">
+                <h3>Sint, vel non.</h3>
+                <p>Consequuntur facilis possimus quaerat ipsa illo et, dicta a aspernatur!</p>
+            </article>
+            <article>
+                <h3>Modi, officiis omnis!</h3>
+                <p>Minima dicta vero laboriosam aliquid eligendi adipisci accusamus perferendis incidunt.</p>
+            </article>
+            <article>
+                <h3>Quo, delectus recusandae?</h3>
+                <p>Odit, quod doloremque magnam non vel voluptas voluptatem ipsam autem?</p>
+            </article>
+            <article>
+                <h3>Odit, vero deserunt!</h3>
+                <p>Cupiditate dicta, minus impedit fugiat sapiente ratione eveniet eos eius.</p>
+            </article>
+            <article>
+                <h3>Culpa, at recusandae!</h3>
+                <p>Voluptatibus nisi molestiae corporis ipsum dolore, quos atque saepe similique.</p>
+            </article>
+            <article>
+                <h3>Quo, iusto impedit.</h3>
+                <p>Beatae quod eaque repellat architecto eius fuga eveniet illum cupiditate.</p>
+            </article>
+            <article>
+                <h3>Pariatur, similique est!</h3>
+                <p>Repellendus provident sequi aspernatur exercitationem, debitis magnam tempora repellat eaque?</p>
+            </article>
+            <article>
+                <h3>Nobis, ratione at?</h3>
+                <p>Quaerat iusto sed illum quidem ut, modi recusandae accusamus ducimus?</p>
+            </article>
+            <article>
+                <h3>Repellendus, possimus reprehenderit.</h3>
+                <p>Rerum repellendus eius iusto unde sapiente, harum ullam accusamus quos!</p>
+            </article>
+            <article>
+                <h3>Asperiores, error accusamus!</h3>
+                <p>Veritatis praesentium sint est non voluptate modi dolorum laudantium consequuntur.</p>
+            </article>
+            <article>
+                <h3>Explicabo, cupiditate voluptatibus?</h3>
+                <p>In consequatur ullam modi quasi totam et recusandae atque culpa.</p>
+            </article>
+            <article>
+                <h3>Neque, illo veniam.</h3>
+                <p>Ut harum temporibus voluptatem? Dicta earum minus molestiae dolore. Quia!</p>
+            </article>
+            <article>
+                <h3>Odio, non accusantium.</h3>
+                <p>Unde aliquid molestiae amet ad optio magni blanditiis rem est.</p>
+            </article>
+            <article>
+                <h3>Recusandae, quo earum?</h3>
+                <p>Enim officia obcaecati qui blanditiis illum. Sint error sit voluptate?</p>
+            </article>
+            <article>
+                <h3>Beatae, accusamus. Rem?</h3>
+                <p>Voluptas esse fugiat odio, enim maiores quod dolorum obcaecati sed!</p>
+            </article>
+            <article>
+                <h3>Asperiores, quae blanditiis!</h3>
+                <p>Mollitia voluptatum fugiat molestiae a incidunt deleniti vitae possimus asperiores.</p>
+            </article>
+            <article>
+                <h3>Beatae, velit mollitia?</h3>
+                <p>Commodi molestias temporibus quaerat magni hic veniam similique autem praesentium.</p>
+            </article>
+            <article>
+                <h3>Expedita, odit optio.</h3>
+                <p>Eaque et esse odio possimus accusamus, temporibus illum dolorem nisi?</p>
+            </article>
+            <article>
+                <h3>Cupiditate, eius similique.</h3>
+                <p>Reiciendis rem corrupti distinctio quas quod atque, corporis impedit veniam!</p>
+            </article>
+            <article>
+                <h3>Culpa, eligendi fugit?</h3>
+                <p>Eaque, maiores aperiam ducimus voluptatum perferendis voluptatibus facilis nulla veniam?</p>
+            </article>
+            <article>
+                <h3>Molestias, dolore expedita.</h3>
+                <p>Fugiat non possimus ipsa mollitia sunt voluptatibus cum, suscipit esse.</p>
+            </article>
+            <article>
+                <h3>Nam, sequi voluptatibus?</h3>
+                <p>Amet ea voluptates minima fugiat dolorem sequi et harum libero.</p>
+            </article>
+            <article>
+                <h3>Dolorum, eveniet voluptates?</h3>
+                <p>Voluptatem accusantium exercitationem molestias officiis facilis facere ex ab ducimus.</p>
+            </article>
+            <article>
+                <h3>At, magni error?</h3>
+                <p>Dicta quae illo officia hic eaque dignissimos sunt dolor quam.</p>
+            </article>
+            <article>
+                <h3>Architecto, itaque ipsam.</h3>
+                <p>A quisquam perferendis beatae tempora impedit. Fugit necessitatibus suscipit repudiandae.</p>
+            </article>
+            <article>
+                <h3>Ipsum, perspiciatis eius?</h3>
+                <p>Incidunt dolore aspernatur molestias, deserunt nisi iure provident veniam quis?</p>
+            </article>
+            <article>
+                <h3>Veniam, error delectus!</h3>
+                <p>Sint cupiditate eos exercitationem, quos excepturi odit facere quia asperiores!</p>
+            </article>
+            <article>
+                <h3>Sit, distinctio ad?</h3>
+                <p>Natus, corporis totam voluptas rerum odio nisi odit earum cupiditate.</p>
+            </article>
+            <article>
+                <h3>Magni, beatae. Quod?</h3>
+                <p>Vitae nobis beatae ex quos qui eum, cum quidem maxime!</p>
+            </article>
+            <article>
+                <h3>Et, facilis mollitia?</h3>
+                <p>A dolorum nam dolor placeat, reiciendis facilis nihil reprehenderit accusamus!</p>
+            </article>
+            <article>
+                <h3>Odio, neque aut.</h3>
+                <p>Maxime similique culpa eaque rerum placeat cupiditate corporis dolor ipsa.</p>
+            </article>
+            <article>
+                <h3>Magnam, repellat corporis!</h3>
+                <p>Quaerat aliquam dolorum sint ipsa? Suscipit necessitatibus laudantium illo. Rem.</p>
+            </article>
+            <article>
+                <h3>Consequatur, rem iste!</h3>
+                <p>Harum natus mollitia distinctio magnam quia non dolor rem culpa.</p>
+            </article>
+            <article>
+                <h3>Doloremque, magni impedit.</h3>
+                <p>Nobis ut iste modi aperiam neque, tempora facilis earum dolore!</p>
+            </article>
+            <article>
+                <h3>Nam, dolor est.</h3>
+                <p>Hic, accusantium nostrum. Exercitationem cum animi corrupti reiciendis? Sapiente, est.</p>
+            </article>
+            <article>
+                <h3>Voluptatibus, inventore numquam.</h3>
+                <p>Vel vero consequatur aliquid praesentium sit atque provident porro molestiae!</p>
+            </article>
+            <article>
+                <h3>Eos, vel ad.</h3>
+                <p>Ab, nisi ea similique voluptate nobis omnis. In, assumenda placeat?</p>
+            </article>
+            <article>
+                <h3>Id, earum esse.</h3>
+                <p>Distinctio optio corrupti, ullam repellendus aut alias iusto tempore inventore?</p>
+            </article>
+            <article>
+                <h3>Porro, ipsum repellat!</h3>
+                <p>Dolorem quod voluptatum enim architecto porro? Et culpa dolorem similique!</p>
+            </article>
+            <article>
+                <h3>Perspiciatis, ab necessitatibus?</h3>
+                <p>Dolores ex facere quasi optio reiciendis placeat aperiam cupiditate necessitatibus.</p>
+            </article>
+            <article>
+                <h3>Odio, sit laborum?</h3>
+                <p>Ullam, tempore sunt. A veniam aut ipsum numquam impedit rerum?</p>
+            </article>
+            <article>
+                <h3>Et, deserunt similique.</h3>
+                <p>Impedit explicabo nesciunt, omnis provident vitae voluptatum quidem debitis enim.</p>
+            </article>
+            <article>
+                <h3>Distinctio, voluptatem vero.</h3>
+                <p>Laborum obcaecati optio cumque laudantium accusantium consequatur eveniet dolores qui!</p>
+            </article>
+            <article>
+                <h3>Quisquam, modi atque!</h3>
+                <p>Impedit neque, maiores recusandae quaerat at laudantium modi quod numquam!</p>
+            </article>
+            <article>
+                <h3>Optio, illo ad.</h3>
+                <p>Est quisquam ipsum alias voluptate atque eaque perspiciatis illum sunt!</p>
+            </article>
+            <article>
+                <h3>Doloribus, blanditiis architecto.</h3>
+                <p>Culpa nulla eveniet obcaecati fugit expedita. Repudiandae ut nam inventore!</p>
+            </article>
+            <article>
+                <h3>Modi, autem hic?</h3>
+                <p>Aperiam voluptate similique deserunt delectus eveniet. Cumque odit necessitatibus cum.</p>
+            </article>
+            <article>
+                <h3>Magni, inventore fugiat.</h3>
+                <p>Eius odit corporis consequuntur repellat deleniti ducimus itaque quos labore?</p>
+            </article>
+            <article>
+                <h3>Tempore, excepturi recusandae!</h3>
+                <p>Repellat ea, modi tenetur saepe placeat veritatis obcaecati ex corrupti?</p>
+            </article>
+            <article>
+                <h3>Fugit, non ipsa?</h3>
+                <p>Vel voluptate aliquid veniam quibusdam illo perferendis libero cumque velit?</p>
+            </article>
+            <article>
+                <h3>Nobis, cumque recusandae?</h3>
+                <p>Perspiciatis corporis est nesciunt fugiat repudiandae quae eveniet necessitatibus dignissimos?</p>
+            </article>
+            <article>
+                <h3>Fuga, optio labore.</h3>
+                <p>Unde repudiandae magnam in nam ex aliquid neque beatae maiores.</p>
+            </article>
+            <article>
+                <h3>Fugit, rerum quia.</h3>
+                <p>Quo optio dolore nulla eos dolorum illo voluptatum deserunt nihil.</p>
+            </article>
+            <article>
+                <h3>Laborum, doloribus! Quae?</h3>
+                <p>Excepturi laudantium iure labore fuga sunt id earum blanditiis ex!</p>
+            </article>
+            <article>
+                <h3>Quidem, vel pariatur.</h3>
+                <p>Aliquid nesciunt dignissimos temporibus delectus doloremque. Sequi laudantium magnam ipsa.</p>
+            </article>
+            <article>
+                <h3>Odit, laudantium asperiores.</h3>
+                <p>Ducimus vel maiores perferendis ipsum fuga non rerum asperiores nihil!</p>
+            </article>
+            <article>
+                <h3>Sed, voluptas odio!</h3>
+                <p>Officiis, tempora eligendi amet quos voluptates a officia sapiente ab.</p>
+            </article>
+            <article>
+                <h3>Veritatis, modi autem?</h3>
+                <p>Commodi officiis error minus eos asperiores, quam dolores inventore dolore.</p>
+            </article>
+            <article>
+                <h3>Sequi, unde rem.</h3>
+                <p>Aut vitae quisquam repellat necessitatibus dolorem alias aliquam autem ut.</p>
+            </article>
+            <article>
+                <h3>Illo, quam ratione.</h3>
+                <p>Inventore eaque natus ex voluptatem a ab quos eum architecto!</p>
+            </article>
+            <article>
+                <h3>At, ex facere!</h3>
+                <p>Assumenda non id consequuntur magnam consequatur dolore fugiat illum possimus.</p>
+            </article>
+            <article>
+                <h3>Earum, odio dolores?</h3>
+                <p>Atque ducimus maxime iste eveniet, necessitatibus dolorum quod! Quidem, quaerat.</p>
+            </article>
+            <article>
+                <h3>Consequatur, veniam omnis.</h3>
+                <p>Magni hic placeat vel nemo natus fugit assumenda reiciendis sit!</p>
+            </article>
+            <article>
+                <h3>Accusamus, magnam laboriosam!</h3>
+                <p>Quod incidunt commodi quibusdam dicta ut animi quos optio totam!</p>
+            </article>
+            <article>
+                <h3>Quo, odit assumenda?</h3>
+                <p>Voluptatibus ad numquam libero ipsam autem ab neque maiores tempora?</p>
+            </article>
+            <article>
+                <h3>Quasi, libero tempora!</h3>
+                <p>Id, distinctio. Eum excepturi illo placeat aliquam ut? Ad, eos.</p>
+            </article>
+            <article>
+                <h3>Eligendi, animi obcaecati?</h3>
+                <p>Quis totam quasi ipsum ipsa laborum maxime ullam corrupti similique.</p>
+            </article>
+            <article>
+                <h3>Ad, placeat repellat?</h3>
+                <p>Earum natus suscipit placeat culpa assumenda voluptas blanditiis fugit vero!</p>
+            </article>
+            <article>
+                <h3>Repudiandae, similique aliquid.</h3>
+                <p>Ullam perferendis odit possimus provident, accusantium laborum rem sequi saepe.</p>
+            </article>
+            <article>
+                <h3>Facere, dolores suscipit.</h3>
+                <p>Dolorum, cum deleniti. Veritatis ullam, corporis suscipit voluptas quod atque.</p>
+            </article>
+            <article>
+                <h3>Iste, quam quibusdam?</h3>
+                <p>Sint optio excepturi praesentium hic? Optio vitae dolorem debitis corporis!</p>
+            </article>
+            <article>
+                <h3>Iure, ratione maiores?</h3>
+                <p>Harum provident quaerat ducimus non magnam quos deserunt velit itaque.</p>
+            </article>
+            <article>
+                <h3>Corporis, corrupti quidem!</h3>
+                <p>Itaque alias ducimus esse quod, exercitationem quia iure quam aperiam.</p>
+            </article>
+            <article>
+                <h3>Qui, similique sequi.</h3>
+                <p>Assumenda omnis incidunt iusto cum ratione mollitia explicabo nihil rerum.</p>
+            </article>
+            <article>
+                <h3>Ducimus, quasi reprehenderit.</h3>
+                <p>Deserunt, necessitatibus. Reiciendis cumque veritatis rerum? Eaque natus quibusdam nam.</p>
+            </article>
+            <article>
+                <h3>Voluptas, eaque alias.</h3>
+                <p>Quibusdam provident unde maxime dolores. Necessitatibus odit a cum quod!</p>
+            </article>
+            <article>
+                <h3>Aperiam, laborum eaque.</h3>
+                <p>Sed labore velit animi porro, autem deleniti odit iste aperiam.</p>
+            </article>
+            <article>
+                <h3>Sit, illo ipsum!</h3>
+                <p>Repellendus, odio eveniet consectetur quis voluptatem hic impedit rem quos.</p>
+            </article>
+            <article>
+                <h3>Fuga, nesciunt accusamus?</h3>
+                <p>Aliquam soluta rerum minima, corrupti hic neque cumque sequi vitae.</p>
+            </article>
+            <article>
+                <h3>Unde, quis eaque?</h3>
+                <p>Quis qui atque provident non distinctio in voluptatum! Impedit, beatae?</p>
+            </article>
+            <article>
+                <h3>Labore, accusantium dolor!</h3>
+                <p>Repellendus aspernatur possimus ipsam nam quo consequatur velit voluptatum dolorum.</p>
+            </article>
+            <article>
+                <h3>Omnis, corporis ipsum?</h3>
+                <p>Sunt itaque beatae esse accusamus numquam maxime saepe veritatis soluta!</p>
+            </article>
+            <article>
+                <h3>Inventore, omnis asperiores.</h3>
+                <p>Autem doloremque aliquid eaque hic totam dolor ea et ipsam.</p>
+            </article>
+            <article>
+                <h3>Beatae, iusto quas.</h3>
+                <p>Libero eum porro cumque optio debitis at vel aut distinctio.</p>
+            </article>
+            <article>
+                <h3>Quisquam, autem voluptatibus.</h3>
+                <p>Consequatur illo aliquam, perspiciatis necessitatibus dicta nihil ut optio amet!</p>
+            </article>
+            <article>
+                <h3>Reprehenderit, voluptas aperiam.</h3>
+                <p>Nesciunt molestiae suscipit, veniam nam accusantium ipsum optio perferendis qui?</p>
+            </article>
+            <article>
+                <h3>Perspiciatis, molestias sunt?</h3>
+                <p>Vero in facilis, facere eius quis accusamus velit vel nostrum?</p>
+            </article>
+            <article>
+                <h3>Modi, excepturi minus!</h3>
+                <p>Eius quo facilis nostrum reiciendis perferendis voluptatibus aliquid necessitatibus illo?</p>
+            </article>
+            <article>
+                <h3>Recusandae, quidem autem.</h3>
+                <p>Dolor labore laudantium a quod, eius doloremque nihil soluta provident?</p>
+            </article>
+            <article>
+                <h3>Sequi, pariatur quos?</h3>
+                <p>Eveniet quam magni ipsum, ea placeat praesentium tempore rerum sed!</p>
+            </article>
+            <article>
+                <h3>Fugit, dolores esse!</h3>
+                <p>Illo cumque optio rerum dolorem ex voluptates temporibus esse exercitationem.</p>
+            </article>
+            <article>
+                <h3>Illum, repellendus saepe!</h3>
+                <p>Dolorem, illum officia? Ab in beatae quia. Tenetur, ipsa cum!</p>
+            </article>
+            <article>
+                <h3>Hic, harum praesentium.</h3>
+                <p>Sunt tempora similique dolore laudantium non ipsum dicta dolorem atque!</p>
+            </article>
+            <article>
+                <h3>Repellat, voluptas atque.</h3>
+                <p>Quas ducimus nisi dolores cum veritatis. Consequuntur est minima corporis.</p>
+            </article>
+            <article>
+                <h3>Commodi, provident? Officiis!</h3>
+                <p>Nostrum officia dolores voluptatem dignissimos at quos labore natus voluptates.</p>
+            </article>
+            <article>
+                <h3>Repellendus, repellat vero.</h3>
+                <p>Velit quas quasi eius ratione laboriosam possimus, a fugiat rerum.</p>
+            </article>
+            <article>
+                <h3>Ducimus, modi nesciunt.</h3>
+                <p>Delectus facere, iusto dolore aliquid officiis eos alias deserunt totam.</p>
+            </article>
+
+
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

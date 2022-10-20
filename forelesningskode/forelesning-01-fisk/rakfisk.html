@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakfisk (intro til BEM)</title>
+    <link rel="stylesheet" href="css/rakfisk.css">
+</head>
+<body>
+    
+    <!-- Introduksjon til bruk av BEM - se i CSS-filen -->
+
+    <div><!--Denne div'en er en wrapper / container. Noen utviklere ville evt. heller valgt å ha <div> inni <header> tilsvarende det som er gjort nedenfor for main. -->
+        <header></header>
+    </div>
+    
+    <main>
+
+        <div><!--Denne div'en er en wrapper / container. Hensikten med en slik <div> er normalt å kunne justere marginer på sidene, midtstilling o.l.-->
+
+            <section>
+
+                <article class="rakfisk-box">
+                    <h3 class="rakfisk-box__title">Hvordan lages rakfisk?</h3>
+                    <img class="rakfisk-box__image" src="images/Rakfisk.jpg" alt="Bilde av rakfisk">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eius minima ipsam sed fugiat dolor, explicabo doloremque nam quibusdam sunt?</p>
+                    <button class="rakfisk-box__button rakfisk-box__button--buy">Kjøp rakfisk</button>
+                    <button class="rakfisk-box__button rakfisk-box__button--read-more">Les mer</button>
+                </article>
+
+            </section>
+
+        </div>
+
+    </main>    
+
+</body>
+</html>

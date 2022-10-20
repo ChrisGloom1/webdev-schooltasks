@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-kolonne grid</title>
+    <link rel="stylesheet" href="css/grid-12-col.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header></header>
+
+        <main>
+
+            <!-- 
+                grid er alltid elementet som wrapper col-elementene direkte (dvs. moderelementet). 
+                Vi kan her for eksempel ikke sette grid på <main> siden den ikke er moderelement til article-elementene.
+            -->
+            <section class="grid">
+                
+                <!-- Her definerer vi, ved å sette klasser på artiklene, hvor mye bredde de skal opp opp i de forskjellige breakpoints -->
+                <article class="col-12 col-sm-6 col-md-4"></article>
+                <article class="col-12 col-sm-6 col-md-4"></article>
+                <article class="col-12 col-sm-6 col-md-4"></article>
+                <article class="col-12 col-sm-6 col-md-4"></article>
+                <article class="col-12 col-sm-6 col-md-4"></article>
+                <article class="col-12 col-sm-6 col-md-4"></article>
+
+            </section>
+
+            <section class="grid"></section>
+
+            <section class="grid"></section>
+
+        </main>
+
+        <footer></footer>
+
+    </div>
+    
+</body>
+</html>

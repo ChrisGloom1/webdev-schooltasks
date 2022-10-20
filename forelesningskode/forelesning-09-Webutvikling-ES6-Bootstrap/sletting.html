@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Dette er noen kodeeksperimenter for å se hvordan man kan "slette" fra et array med filter() og splice().
+            Med filter() så sletter man egentlig ingenting, man bare unnlater å inkludere det man ikke vil ha med.
+            splice() vil faktisk fjerne noe fra et array.
+        */
+
+        /*
+            Film-array
+        */
+        const movieArray = [
+            { 
+                id: 1, 
+                title: "Olsenbanden - siste skrik"
+            },
+            { 
+                id: 2, 
+                title: "Syk pike"
+            },
+            { 
+                id: 3, 
+                title: "Utvandrerne"
+            },
+            { 
+                id: 4, 
+                title: "Rose"
+            },
+            { 
+                id: 5, 
+                title: "Fest hos Albert Åberg"
+            },
+            { 
+                id: 6, 
+                title: "Bullet Train"
+            }
+        ];
+
+        //Skriver ut hele arrayet i original form
+        console.log(movieArray); 
+
+        /*
+            ***
+            Alternativ 1. "Sletting" med filter()
+            ***
+        */
+        // moviesWithout5And9 vil inneholde de filmer som ikke har id 5
+        const moviesWithout5And9 = movieArray.filter( movie => movie.id != 5 ); 
+        // Hvis man lagrer denne arrayen i localStorage vil man lagre arrayet uten den ønskede filmen: localStorage.setItem( "movies",  JSON.stringify( moviesWithout5 ) );
+        console.log( moviesWithout5 );
+
+
+        /*
+            ***
+            Alternativ 2. Sletting med splice()
+            ***
+            Kombinasjon av find(), array.indexOf(), array.splice(index, 1)
+        */ 
+        const movieToDelete = movieArray.find( movie => movie.title === "Rose" ); // Finner filmen vi ønsker å slette
+        console.log(movieToDelete);
+
+        const deleteIndex = movieArray.indexOf( movieToDelete ); // Finner ut hvilken index filmen har
+        console.log(deleteIndex);
+
+        movieArray.splice( deleteIndex, 1 ); // Sletter filmen fra arrayet
+        console.log(movieArray);
+
+        /* 
+            Ekstra kommentar fra forelesningen. En i klassen nevnte begrepet "mutere".
+            "Å mutere" noe betyr at vi endrer eksempelvis på et objekts property's verdi. 
+            Eksempel på å mutere arrayet: movieArray[0].title = "Olsenbanden - aller siste skrik?";
+            I React, og andre sammenheng, ser man på å mutere som en dårlig ting - løsningen er å bytte ut istedenfor å endre. 
+            For en array betyr det at man ikke muterer arrayet, men heller erstatter hele arrayet med en ny versjon.
+        */
+
+    </script>
+
+</body>
+</html>

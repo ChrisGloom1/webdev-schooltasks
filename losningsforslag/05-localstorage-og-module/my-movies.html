@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies2022</title>
+    <script defer type="module" src="scripts/my-movies.js"></script>    
+</head>
+<body>
+   
+    <header>
+        <a href="my-movies.html">Movies2022</a>
+        <nav>
+            <ul>
+                <li><a href="my-movies.html">Hjem</a></li>                
+                <li><a href="my-movies-save-movie.html">Legg til film</a></li>
+                <li><a href="my-movies-delete-movie.html">Slett film</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Filmer</h3>
+            <div>
+                <label>Kategori</label>
+                <select id="movie-category-select">
+                    <option value="action">Action</option>
+                    <option value="komedie">Komedie</option>
+                    <option value="scifi">Science fiction</option>
+                </select>
+                <input id="show-movies-by-category-btn" type="button" value="Søk kategori">                
+            </div>
+        </section>
+        <section id="movie-output"></section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+
+
+section{
+    margin-bottom: 3rem;
+}
+
+.products, .banners, .sales{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+/*
+    For testens skyld, settes fast høyder på produktboksene, bannerne og salgsboksen.
+*/
+.product-box, .sales-box{
+    height: 200px;
+    background-color: rgb(230, 230, 230);
+}
+
+.banner-box{
+    height: 300px;
+    background-color: rgb(230, 50, 50);
+}
+
+/*
+    ***
+        Mobil - grunnkoden
+    ***
+*/
+.product-box{
+    grid-column: auto / span 12;
+}
+
+.sales-box{
+    grid-column: auto / span 12;
+}
+
+/* På mobil er bannerne skjult */
+.banner-box{
+    display: none;
+}
+
+
+/*
+    ***
+        Breakpoint for Tablet
+    ***
+*/
+@media screen and (min-width: 768px ) {
+
+    .product-box{
+        grid-column: auto / span 6;
+    }
+
+    .sales-box{
+        grid-column: auto / span 4;
+    }
+
+    .banner-box{      
+        display: block;          
+        grid-column: auto / span 12;
+    }
+
+}
+
+
+/*
+    ***
+        Breakpoint for Laptop
+    ***
+*/
+@media screen and (min-width: 978px ) {
+
+    .product-box{
+        grid-column: auto / span 4;
+    }
+
+    .sales-box{
+        grid-column: auto / span 3;
+    }
+
+    .banner-box{                
+        grid-column: auto / span 6;
+    }
+    
+}        

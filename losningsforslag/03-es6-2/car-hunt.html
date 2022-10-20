@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarHunt</title>
+    <link rel="stylesheet" href="css/car-hunt.css">
+    <script defer src="scripts/car-hunt.js"></script>
+</head>
+<body>
+    
+    <!--
+        Løsningsforslaget er løst uten Module, men kan/bør fint løses med Module        
+    -->
+
+    <div>
+
+        <header>
+            <a href="#nogo">CarHunt</a>
+        </header>
+
+        <main>
+
+            <section>
+
+                <h3>Vis alle</h3>
+                <button id="show-all-btn">Vis alle</button>
+
+                <h3>Søk etter merke</h3>
+                <label>Merke</label>
+                <input id="brand-txt" type="text">
+                <button id="search-by-brand-btn">Søk på merke</button>
+
+                <h3>Søk på pris</h3>
+                <label>Fra (minimumpris)</label>
+                <input id="min-price-txt" type="number" min="0" max="50000" step="100" >
+                <label>Til (maksimumpris)</label>
+                <input id="max-price-txt" type="number" min="100" max="50000" step="100" >
+                <button id="search-by-price-btn">Søk på pris</button>
+
+                <h3>Sorter</h3>
+                <button id="sort-by-kilometers-btn">Sorter etter kilometer</button>
+                <button id="sort-by-price-btn">Sorter etter pris</button>
+
+            </section>
+
+            <section id="car-results"></section>
+
+        </main>
+
+        <footer></footer>
+
+    </div>    
+
+</body>
+</html>

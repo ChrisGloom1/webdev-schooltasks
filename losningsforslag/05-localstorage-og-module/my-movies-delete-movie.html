@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slett film</title>
+    <script defer type="module" src="scripts/my-movies-delete-movie.js"></script>
+</head>
+<body>
+    <header>
+        <a href="my-movies.html">Movies2022</a>
+        <nav>
+            <ul>
+                <li><a href="my-movies.html">Hjem</a></li>                
+                <li><a href="my-movies-save-movie.html">Legg til film</a></li>
+                <li><a href="my-movies-delete-movie.html">Slett film</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Slett film</h3>
+            <div>
+                <label>Angi id på film</label>
+                <input id="id-txt" type="text">
+            </div>
+            <input id="get-movie-btn" type="button" value="Hent film">
+            <input id="delete-movie-btn" type="button" value="Slett film">
+        </section>
+        <section id="movie-output"></section>
+    </main>
+</body>
+</html>

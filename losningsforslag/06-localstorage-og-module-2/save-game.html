@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGames22 - Lagre ett spill</title>
+    <script defer type="module" src="scripts/save-game.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="#nogo">MyGames22</a>
+        <nav>
+            <ul>
+                <li><a href="mygames22.html">Hjem</a></li>
+                <li><a href="save-game.html">Lagre ett spill</a></li>
+                <li><a href="save-games.html">Lagre flere spill</a></li>
+                <li><a href="update-game.html">Oppdater spill</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Lagre ett spill</h3>
+            <div>
+                <label>Tittel</label>
+                <input id="title-txt" type="text">
+            </div>
+            <div>
+                <label>Pris</label>
+                <input id="price-txt" type="number">
+            </div>
+            <div>
+                <label>Konsoll</label>
+                <input id="console-txt" type="text">
+            </div>
+            <button id="save-game-btn">Lagre spill</button>
+        </section>
+
+        <section id="game-output"></section>
+
+    </main>
+    
+</body>
+</html>

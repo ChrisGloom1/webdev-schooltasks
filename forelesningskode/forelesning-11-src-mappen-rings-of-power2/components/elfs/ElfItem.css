@@ -1,0 +1,11 @@
+/*
+    Dette er CSS laget spesifikt for ElfItem.js, men merk at CSS her vil kunne påvirke andre komponenter. Man unngår å bruke type-velger i disse spesifikke filene. Det som er felles for løsningen kan man heller ville putte i en felles-CSS-fil som importeres i App.js eller index.js
+*/
+
+.elf-box{
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 5px;
+    margin: 1rem;
+}
