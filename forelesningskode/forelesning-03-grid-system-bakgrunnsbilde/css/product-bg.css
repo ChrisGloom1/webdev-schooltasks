@@ -1,0 +1,27 @@
+.product-box{
+    width: 300px;
+}
+
+.product-box__background{
+    height: 300px;
+    background-image: url("../images/vacation/ski-resort.jpg");
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    /*
+        Kode som plasserer innholdet (tittelen) på ønsket plass. 
+        Hvis man setter center på både justify content og align-items midsentrerer man innholdet.
+    */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.product-box__title{
+    background-color: rgba(30, 30, 30, 0.7);
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+

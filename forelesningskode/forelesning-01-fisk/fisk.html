@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantiske strukturtager</title>
+</head>
+<body>
+
+    <div><!-- wrapper / container div for å samle siden, sette felles margin på innholdet, midtstille osv. div'en er ikke semantisk og brukes av rent stilmessige grunner -->
+
+        <header>
+
+            <nav></nav> <!-- nav er for områder som er dedikert for navigasjon. Inneholder etter idealen en ul -> li -> a -->
+
+        </header>
+
+        <main><!-- main er den eneste semantiske strukturtagen som det bare kan være en av. Alle andre kan man ha flere av og nøste i hverandre. -->
+
+            <header></header>
+
+            <section><!-- et område med innhold som har logisk samhørighet -->
+
+                <article><!-- en enhet med informasjon om noe -->
+                    <aside></aside><!-- tilleggsinformasjon til artikkelen-->
+                    <h3>iPhone XX</h3>
+                </article>
+
+                <article></article>
+
+                <article></article>
+
+            </section>
+
+            <section></section>
+
+            <section></section>
+
+        </main>
+
+        <footer><!-- footeren er avslutningen på et område. Med tanke på footeren for nettsiden er det typisk å ha kontaktinformasjon, sosiale medie lenker, diverse lenker osv. -->
+
+            <nav></nav>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>

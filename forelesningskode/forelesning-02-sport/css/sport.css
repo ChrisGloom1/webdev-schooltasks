@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+/*
+    Grunnkoden er for mobil, deretter legger man til media queries for størrelsene over
+*/
+
+.news-section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+.news-article{
+    grid-column: auto / span 12;
+    background-color: rgb(200, 200, 200);
+}
+
+.news-article__image{
+    width: 100%;
+}
+
+
+/*
+    Tablet
+*/
+@media screen and (min-width: 768px) {
+    
+    .news-article{
+        grid-column: auto / span 6;
+    }
+
+}
+
+/*
+    Todo: legge til media query for laptop, laptop large, laptop extra large
+*/

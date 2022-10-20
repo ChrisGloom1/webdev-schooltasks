@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button - buy</title>
+    <link rel="stylesheet" type="text/css" href="css/button-buy.css" > 
+    <!-- 
+        type-attributtet er i HTML5 ikke så mye brukt.
+        "HTML5-bibelen" sier ikke strengt at man skal eller ikke skal bruke type, kun hva som skjer hvis man bruker eller ikke bruker den: https://html.spec.whatwg.org/multipage/semantics.html#processing-the-type-attribute
+    -->
+</head>
+<body>
+
+    <!--
+        Knapper kan se forskjellige ut i forskjellige nettlesere hvis man ikke stilsetter dem.
+    -->
+    
+    <!--
+        <input type="button"> er et selvlukkende element.
+    -->
+    <input class="button button--buy" type="button" value="Kjøp nå!" >
+
+    <!-- 
+        <button> er et container-element, som vil si at den har start- og slutt-tag og at vi dermed kan legge andre HTML-elementer inn i den.
+    -->
+    <button>Kjøp senere</button>
+
+</body>
+</html>

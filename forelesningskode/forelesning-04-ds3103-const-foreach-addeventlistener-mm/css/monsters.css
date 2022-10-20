@@ -1,0 +1,36 @@
+/*
+    Enkelt startoppsett (uferdig) for et grid-system for eksempelets skyld
+*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+.responsive-image{
+    width: 100%;
+}
+
+/*
+    ***
+    Mobil
+    ***
+*/
+.col-6{
+    grid-column: auto / span 6;
+}
+
+
+/*
+    ***
+    Tablet
+    ***
+*/
+@media screen and (min-width: 768px) {
+    .col-sm-4{
+        grid-column: auto / span 4;
+    }
+}
+
+
+

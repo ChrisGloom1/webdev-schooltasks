@@ -1,0 +1,2 @@
+Mappene som er opprettet i dette prosjektet er til eksempel på at det kan være mange slags mapper og strukturer i et React-prosjekt.    
+Merk at hvis man ønsker å dele sitt React-prosjekt er nok å dele src-mappen. Det andre som er rundt vil være mer eller mindre likt med unntak av noen få ting. node_modules-mappen ønsker man ikke å dele med andre/sende til andre siden den har så mange filer.

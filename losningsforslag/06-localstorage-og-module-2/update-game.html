@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGames22 - oppdater spill</title>
+    <script defer type="module" src="scripts/update-game.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="#nogo">MyGames22</a>
+        <nav>
+            <ul>
+                <li><a href="mygames22.html">Hjem</a></li>
+                <li><a href="save-game.html">Lagre ett spill</a></li>
+                <li><a href="save-games.html">Lagre flere spill</a></li>
+                <li><a href="update-game.html">Oppdater spill</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Endre tittel på spill</h3>
+            <div>
+                <label>Angi id</label>
+                <input id="id-txt" type="number">
+                <button id="get-game-by-id-btn">Hent spill etter id</button>
+            </div>
+            <div>
+                <label>Tittel</label>
+                <input id="title-txt" type="text">
+            </div>
+            <button id="update-game-btn">Oppdater spill</button>
+        </section>
+
+        <section id="game-output"></section>
+
+    </main>
+    
+</body>
+</html>

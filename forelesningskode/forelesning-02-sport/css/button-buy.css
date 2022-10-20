@@ -1,0 +1,27 @@
+/* 
+    Block 
+
+    Man kan her se på Block-koden som det som skal være felles for alle knapper. 
+    Eksempelvis skal alle/de fleste knapper kanskje ha samme padding, border-stil/tykkelse, border-radius, font-familie osv.
+    Man gir da alle knapper Block-koden (.button) og i tillegg Modifier.
+*/
+.button{
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255); /* #FFFFFF - #FFF */
+    border-radius: 15px;
+    transition: all 0.7s;
+}
+
+/* Modifier - her representerer Modifier en knappevariant (kjøp, slett, les mer, bekreft, lagre osv.)*/
+.button--buy{
+    background-color: rgb(75, 150, 75);
+    border-color: rgb(60, 120, 60);
+    color: rgb(255, 255, 255);    
+}
+
+.button--buy:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 150, 75);
+}

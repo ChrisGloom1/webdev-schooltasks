@@ -1,0 +1,53 @@
+/*
+    Generisk 12-kolonne grid-system som man skal kunne ta i bruk i "alle" løsninger hvor man trenger en slik grid.
+*/
+
+.grid{ /* funksjonen som grid har her kalles ofte row i CSS-rammeverk; ref. f.eks. Bootstrap */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+
+/*
+    Mobil
+*/
+.col-12{
+    grid-column: auto / span 12;
+}
+.col-6 {
+    grid-column: auto / span 6;
+}
+/* 
+    Man legger så til alle col-variantene for alle breakpoints som man mener er aktuelle.
+    Man kan i prinsippet like gjerne legge til alle col-variantene (f.o.m. col-1 t.o.m. col-12) slik at alt ligger klart for fremtidige behov.
+    Man oppnår slikt et fullverdig grid-system man kan gjenbruke på "alle" fremtidige prosjekter hvor et grid-system er aktuelt.
+*/
+
+
+/*
+    Tablet
+*/
+@media all and (min-width: 768px) {
+    .col-sm-12{
+        grid-column: auto / span 12;
+    }
+    .col-sm-6{
+        grid-column: auto / span 6;
+    }
+}
+
+
+/*
+    Laptop - md over 978px
+*/
+
+
+/*
+    Laptop - lg over 1200
+*/ 
+
+
+/*
+    Laptop - xl over 1400
+*/

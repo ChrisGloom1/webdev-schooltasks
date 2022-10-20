@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="output-div"></div>
+
+    <script>
+
+        /*
+            Å sette inn enkeltverdier i localStorage kan passe hvis det er relativt få verdier å lagre. 
+            Ellers kan det være mye mer oversiktelig å bruke objekter eller array med objekter.
+        */
+
+
+        localStorage.setItem("actor1", "Tom Cruise");
+
+        const actor2 = { name: "Miles Teller", age: 37, country: "USA" };
+        const actor2Stringified = JSON.stringify( actor2 ); // Det er kun lov å lagre tekst i localStorage. Må derfor konvertere objektet av actor2 til en tekst - mer spesifikt: en JSON-versjon av objektet. JSON = tekst
+        localStorage.setItem( "actor2", actor2Stringified );
+
+
+        /*
+            I koden under ser vi at vi må JSON.parse det som kommer fra localStorage.for at det skal oppføre seg som et objekt; ellers er det bare ren tekst.
+            Objektet actor2 ligger i localStorage som en JSON string.
+        */
+        const actor2InStorage = localStorage.getItem( "actor2" );        
+        alert( actor2InStorage.country ); // Dette vil kun returnere undefined, siden actor2InStorage er JSON (tekst) og ikke objekt
+        
+        const actor2Parsed = JSON.parse( actor2InStorage ); // Her konverteres JSON til objekt som gjør at vi deretter kan bruke objektet og få tak i country under
+        alert( actor2Parsed.country );
+
+
+    </script>
+
+</body>
+</html>
