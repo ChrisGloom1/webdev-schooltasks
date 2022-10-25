@@ -4,6 +4,8 @@ import CounterItem from "./components/CounterItem";
 import SuperheroItem from './components/SuperheroItem';
 import WordInStateItem from './components/WordInStateItem';
 import MovieItem from './components/MovieItem'
+import ObjInStateItem from './components/ObjInStateItem';
+import AddCountriesItem from './components/AddCountriesItem';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
     <AddSubItem />
     <SuperheroItem />
     <MovieItem />
+    <ObjInStateItem />
+    <AddCountriesItem />
     </div>
 </div>
   );
