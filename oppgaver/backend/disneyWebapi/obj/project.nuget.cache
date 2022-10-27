@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "kke9oj98P1jYCSKeb4jwpYIKpks+OsJnPUDEeOwBt8HFPtPyrMYcqRck9ANKl3hxhzx9JcbmY++Q67vRZVtGvg==",
+  "success": true,
+  "projectFilePath": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/oppgaver/backend/disneyWebapi/disney-webapi.csproj",
+  "expectedPackageFiles": [
+    "/Users/christopherglommenandresen/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/christopherglommenandresen/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/christopherglommenandresen/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/christopherglommenandresen/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/christopherglommenandresen/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/christopherglommenandresen/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
