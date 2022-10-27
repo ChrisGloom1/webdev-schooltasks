@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/TodoApi/TodoApi.csproj",
+  "FilePath": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/oppgaver/backend/disneyWebapi/disney-webapi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "TodoApi",
+  "RootNamespace": "disney_webapi",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
