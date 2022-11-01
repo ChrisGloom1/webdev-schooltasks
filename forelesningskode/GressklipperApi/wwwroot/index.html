@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+  <title>Gressssss</title>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Gressklippprrrrrr</h1>
+    </header>
+
+    <main>
+      <section>
+        <img src="images/gress1.jpeg" alt="MOWER">
+        <img src="images/gress2.jpeg" alt="mowwww">
+      </section>
+
+      <section>
+        <h3>Endepunkter</h3>
+        <ul>
+          <li>Hent alle: https://gressklippr.no/lawnmower</li>
+          <li>Hent etter ID: https://gressklippr.no/lawnmower/id</li>
+          <li>Hent etter merke: https://gressklippr.no/lawnmower/merke</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Info om gressklipper</h3>
+        <ul>
+          <li>Id: int</li>
+          <li>Merke: string</li>
+          <li>Modell: string</li>
+          <li>Pris: double</li>
+        </ul>
+      </section>
+
+      <section class="row">
+        <article class="col">
+          <h3>Gressknuseren</h3>
+          <img class="img-fluid" src="images/gress1.jpeg">
+        </article>
+        <article class="col">
+          <h3>Løvdreperen</h3>
+          <img class="img-fluid" src="images/gress2.jpeg">
+        </article>
+        <article class="col">
+          <h3>Plenrydderen</h3>
+          <img class="img-fluid" src="images/gress3.jpeg">
+        </article>
+      </section>
+
+    </main>
+
+    <footer></footer>
+
+  </div>
+
+  <script>
+
+    const url = "https://localhost:7157/api/lawnmower";
+
+    const getLawnmowers = async () => {
+      const result = await axios.get(url);
+      const lawnmowers = result.data;
+      console.log(lawnmowers);
+    }
+
+    getLawnmowers();
+
+  </script>
+
+</body>
+</html>
