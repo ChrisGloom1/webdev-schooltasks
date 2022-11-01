@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+  <title>frontendgresset er bra</title>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Dæ'frontend med gressknusere</h1>
+      <h2>Vi gjør bruk av GresklipprrrrrAPI</h2>
+    </header>
+
+    <main>
+  
+    </main>
+
+    <footer></footer>
+
+  </div>
+
+  <script>
+
+    const url = "https://localhost:7157/api/lawnmower";
+
+    const getLawnmowers = async () => {
+      const result = await axios.get(url);
+      const lawnmowers = result.data;
+      console.log(lawnmowers);
+    }
+
+    getLawnmowers();
+
+  </script>
+
+</body>
+</html>
