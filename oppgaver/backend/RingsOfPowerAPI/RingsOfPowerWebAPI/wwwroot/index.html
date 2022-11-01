@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+  <title>Rings of Power API</title>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Rings of Power API</h1>
+    </header>
+
+    <main>
+      <div class="code-block">
+        <code>
+          Endpoints:<br>
+          Get all: https://localhost:7073/characters/ <br>
+          Get by id: https://localhost:7073/characters/id/{ID}<br>
+          Get by name: https://localhost:7073/characters/name/{NAME}<br>
+          Get by race: https://localhost:7073/characters/race/{RACE}
+        </code>
+      </div>
+
+      <section id="print-area"></section>
+
+
+    </main>
+
+  </div>
+
+  <script>
+    
+    const printArea = document.querySelector("#print-area");
+    let htmlTxt = "";
+    const url = "https://localhost:7073/characters"
+
+    const getCharacters = async () => {
+      const results = await axios.get(url);
+      const characters = results.data;
+
+      characters.forEach(character => {
+        htmlTxt += `
+          <article class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/${character.image}"/>
+              <div class="card-body">
+                <h5 class="card-title">Name: ${character.name}</h5>
+                <p class="card-text">The race of ${character.name} is ${character.race}.</p>
+              </div>
+            </div>
+          </article>
+      `;
+      });
+      printArea.innerHTML = `
+      <div class="row">
+        ${htmlTxt}
+      </div>
+      `;
+    }
+
+    getCharacters();
+
+  </script>
+
+</body>
+</html>
