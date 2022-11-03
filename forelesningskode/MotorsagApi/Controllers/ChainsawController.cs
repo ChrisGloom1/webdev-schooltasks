@@ -41,9 +41,5 @@ public class ChainsawController : ControllerBase
     Chainsaw? chosenChainsaw = chainsaws.Find(chainsaw => chainsaw.Id == id);
     return chosenChainsaw;
   }
-
-
-  // hainsaw newChainsaw = new Chainsaw();
-  // newChainsaw.Brand = "Karcher";
 }
 

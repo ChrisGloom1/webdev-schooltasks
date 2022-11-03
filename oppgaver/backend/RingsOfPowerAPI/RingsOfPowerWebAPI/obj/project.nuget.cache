@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "x+cN3svccZL1mRydljkWFbRNTTPmoYvibMdGTupHy0j7MJ2loegDefrrtZBvKJ2Yc6iZrlLQ4Eg1wdp/tmSIRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Chris\\Desktop\\school\\03s\\DS3103_webutvikling\\webdev-schooltasks\\webdev-schooltasks\\oppgaver\\backend\\RingsOfPowerAPI\\RingsOfPowerWebAPI\\RingsOfPowerWebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
