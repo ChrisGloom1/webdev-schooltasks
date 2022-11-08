@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "8oUS5J5239Eyxqhv3L4roQ/wRelhT/qmTnah9q6IXO8=",
+  "Source": "AnimalsApi",
+  "BasePath": "_content/AnimalsApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AnimalsApi/wwwroot",
+      "Source": "AnimalsApi",
+      "ContentRoot": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/AnimalsApi/wwwroot/",
+      "BasePath": "_content/AnimalsApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/AnimalsApi/wwwroot/index.html",
+      "SourceId": "AnimalsApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/AnimalsApi/wwwroot/",
+      "BasePath": "_content/AnimalsApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}
