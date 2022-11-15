@@ -1,37 +1,11 @@
 {
   "Version": 1,
-  "Hash": "ATz3+sHBIdmzYo4+2wbsMzliIEnsbAWI5ykIzXhWJ+w=",
+  "Hash": "8mMUp0WagJANJFOjepqmMV7cUm80VRP0rJNXk1mARNc=",
   "Source": "CartoonApi",
   "BasePath": "_content/CartoonApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "CartoonApi/wwwroot",
-      "Source": "CartoonApi",
-      "ContentRoot": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/CartoonApi/wwwroot/",
-      "BasePath": "_content/CartoonApi",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/CartoonApi/wwwroot/index.html",
-      "SourceId": "CartoonApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/christopherglommenandresen/Desktop/webdev-schooltasks/forelesningskode/CartoonApi/wwwroot/",
-      "BasePath": "_content/CartoonApi",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/index.html"
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": []
 }

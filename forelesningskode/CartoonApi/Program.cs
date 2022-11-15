@@ -3,10 +3,21 @@ using CartoonApi.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<CartoonContext>(
-    options => options.UseSqlite("Data Source=CartoonsDatabase.db")
+builder.Services.AddCors(
+    options =>
+    {
+      options.AddPolicy("AllowAll",
+          builder => builder
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowAnyOrigin()
+      );
+    }
 );
 
+builder.Services.AddDbContext<CartoonContext>(
+    options => options.UseSqlite("Data Source=CartoonDatabase.db")
+);
 
 // Add services to the container.
 
@@ -16,6 +27,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
