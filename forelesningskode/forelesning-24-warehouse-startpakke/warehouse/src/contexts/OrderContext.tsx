@@ -6,15 +6,33 @@ import WarehouseService from '../services/WarehouseService';
 export const OrderContext = createContext<IOrderContext | null>(null);
 
 type Props = {
-    children: ReactNode
+  children: ReactNode
 }
 
 const OrderProvider = ({children} : Props) => {
-    return (
-        <OrderContext.Provider value={{}}>
-            {children}
-        </OrderContext.Provider>        
-    )
+
+  const [orders, setOrders] = useState<IOrder[]>([]);
+
+  useEffect(()=>{
+    getOrdersFromService();
+  },[]);
+
+  const getOrdersFromService = async () => {
+    const ordersFromService = await WarehouseService.getAll();
+    setOrders(ordersFromService);
+  }
+
+  const deleteOrderById = async (id: number) => {
+    await WarehouseService.deleteOrder(id);
+    const arr = orders.filter(order => order.id != id)
+    setOrders(arr);
+  }
+
+  return (
+    <OrderContext.Provider value={{orders, deleteOrderById}}>
+      {children}
+    </OrderContext.Provider>        
+  )
 }
 
 export default OrderProvider;

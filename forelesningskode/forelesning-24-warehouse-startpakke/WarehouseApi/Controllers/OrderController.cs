@@ -9,25 +9,50 @@ namespace WarehouseApi.Controllers;
 [Route("[controller]")]
 public class OrderController : ControllerBase
 {
-    private readonly WarehouseContext context;
+  private readonly WarehouseContext context;
 
-    public OrderController(WarehouseContext _context)
+  public OrderController(WarehouseContext _context)
+  {
+    context = _context;
+  }
+
+  [HttpGet] // [HttpGet("{skip}/{take}")], Get(int skip, int take), https://7000/ordre/10/100 -> fra 11 ordre, vis neste 100
+  public async Task<ActionResult<List<Order>>> Get()
+  {
+    try
     {
-        context = _context;
+      //.Skip(20).Take(20)
+      List<Order> orders = await context.Order.Take(20).ToListAsync();
+      return orders;
     }
-
-    [HttpGet]
-    public async Task<ActionResult<List<Order>>> Get()
+    catch
     {
-        try
-        {
-            List<Order> orders = await context.Order.Take(20).ToListAsync();        
-            return orders;
-        }
-        catch
-        {
-            return StatusCode(500);
-        }        
-    }    
+      return StatusCode(500);
+    }
+  }
+
+  [HttpDelete("{id}")]
+  public async Task<IActionResult> Delete(int id)
+  {
+    try
+    {
+      Order? orderToDel = await context.Order.FindAsync(id);
+
+      if (orderToDel != null)
+      {
+        context.Order.Remove(orderToDel);
+        await context.SaveChangesAsync();
+        return NoContent();
+      }
+      else
+      {
+        return NotFound();
+      }
+    }
+    catch
+    {
+      return StatusCode(500);
+    }
+  }
 
 }
