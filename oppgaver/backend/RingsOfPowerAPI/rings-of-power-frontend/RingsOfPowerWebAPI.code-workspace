@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../RingsOfPowerWebAPI"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "rings-of-power-frontend"
+  }
+}
